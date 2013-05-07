@@ -3,27 +3,20 @@ package controladora;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 import modelo.Modelo;
 import visao.CalcBean;
 
 public class Controladora {
 
     CalcBean calculadora;
-    Modelo logica;
-    String primeirovalor;
-    String segundovalor;
-    boolean operacao;
-    BotaoIgualButtonListener igual;
+    boolean pontoInserido;
     char operador;
     String valor1;
 
     public Controladora(CalcBean calc, Modelo log) {
         this.calculadora = calc;
-        this.logica = log;
-        this.primeirovalor = "";
-        this.segundovalor = "";
-        this.operacao = false;
+        this.pontoInserido = false;
+        
         calculadora.addBotao0ButtonListener(new BotaoNumerosButtonListener());
         calculadora.addBotao1ButtonListener(new BotaoNumerosButtonListener());
         calculadora.addBotao2ButtonListener(new BotaoNumerosButtonListener());
@@ -62,7 +55,7 @@ public class Controladora {
                 calculadora.setVisibilidadePainel(false);
                 calculadora.setPreferredSize(new Dimension(205, 48));
             } else {
-                calculadora.setVisibilidadePainel(true);;
+                calculadora.setVisibilidadePainel(true);
             }
         }
     }
@@ -72,8 +65,9 @@ public class Controladora {
         @Override
         public void actionPerformed(ActionEvent e) {
             operador = '+';
-            valor1 = calculadora.getText();  // recebe o valor atual  
+            setValor1(calculadora.getText());  // recebe o valor atual  
             calculadora.setText("");   // apaga o campo de texto
+            setPontoInserido(false);
         }
     }
 
@@ -82,8 +76,9 @@ public class Controladora {
         @Override
         public void actionPerformed(ActionEvent e) {
             operador = '-';
-            valor1 = calculadora.getText();  // recebe o valor atual  
-            calculadora.setText("");   // apaga o campo de texto   
+            setValor1(calculadora.getText());  // recebe o valor atual  
+            calculadora.setText("");   // apaga o campo de texto  
+            setPontoInserido(false);
         }
     }
 
@@ -92,8 +87,9 @@ public class Controladora {
         @Override
         public void actionPerformed(ActionEvent e) {
             operador = '*';
-            valor1 = calculadora.getText();  // recebe o valor atual  
+            setValor1(calculadora.getText());  // recebe o valor atual  
             calculadora.setText("");   // apaga o campo de texto   
+            setPontoInserido(false);
         }
     }
 
@@ -102,18 +98,21 @@ public class Controladora {
         @Override
         public void actionPerformed(ActionEvent e) {
             operador = '/';
-            valor1 = calculadora.getText();  // recebe o valor atual  
+            setValor1(calculadora.getText());  // recebe o valor atual  
             calculadora.setText("");   // apaga o campo de texto 
+            setPontoInserido(false);
         }
     }
     
     private class BotaoPontoButtonListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            String valor_atual = calculadora.getText(); // pega o texto atual do visor 
-            calculadora.setText(valor_atual + ".");
-            String valor = calculadora.getValor(e.getSource());
-           
+            if (!isPontoInserido()) {
+                String valor_atual = calculadora.getText(); // pega o texto atual do visor 
+                calculadora.setText(valor_atual + ".");
+                String valor = calculadora.getValor(e.getSource()); 
+                setPontoInserido(true);
+            }
         }
     }
 
@@ -122,10 +121,10 @@ public class Controladora {
         @Override
         public void actionPerformed(ActionEvent e) {
             String valor2 = calculadora.getText(); // valor2 recebe o valor atual
-            float v = Float.parseFloat(valor1); // converte o valor1 em inteiro
-            float v2 = Float.parseFloat(valor2); // converte valor2 em inteiro
+            float v = Float.parseFloat(getValor1()); // converte o valor1 em float
+            float v2 = Float.parseFloat(valor2); // converte valor2 em float
             calculadora.setText("" + calcular(v, operador, v2)); 
-
+            setPontoInserido(true);
         }
     }
 
@@ -144,5 +143,21 @@ public class Controladora {
         }
 
         return resultado;
+    }
+    
+    public boolean isPontoInserido() {
+        return pontoInserido;
+    }
+
+    public void setPontoInserido(boolean pontoInserido) {
+        this.pontoInserido = pontoInserido;
+    }
+    
+    public String getValor1() {
+        return valor1;
+    }
+
+    public void setValor1(String valor1) {
+        this.valor1 = valor1;
     }
 }

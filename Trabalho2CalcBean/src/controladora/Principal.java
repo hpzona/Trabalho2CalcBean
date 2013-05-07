@@ -1,7 +1,7 @@
 package controladora;
 
 import java.awt.Dimension;
-import modelo.Logica;
+import modelo.Modelo;
 import visao.CalcBean;
 
 public class Principal {
@@ -10,10 +10,10 @@ public class Principal {
         javax.swing.JFrame frame = new javax.swing.JFrame();  // Cria frame
         CalcBean bean;
         Controladora controladora;
-        Logica logica;
+        Modelo logica;
         
         bean = new CalcBean();
-        logica = new Logica();
+        logica = new Modelo();
         controladora = new Controladora(bean, logica);
         
         frame.add(bean);  // Adiciona bean ao frame

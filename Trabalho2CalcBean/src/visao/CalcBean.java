@@ -25,16 +25,16 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
         botao4 = new javax.swing.JButton();
         botao9 = new javax.swing.JButton();
         botao6 = new javax.swing.JButton();
-        adicao = new javax.swing.JButton();
+        botaoAdicao = new javax.swing.JButton();
         botao1 = new javax.swing.JButton();
-        subtracao = new javax.swing.JButton();
+        botaoSubtracao = new javax.swing.JButton();
         botao5 = new javax.swing.JButton();
         botao8 = new javax.swing.JButton();
         botao0 = new javax.swing.JButton();
-        multiplicacao = new javax.swing.JButton();
-        divisao = new javax.swing.JButton();
-        ponto = new javax.swing.JButton();
-        igual = new javax.swing.JButton();
+        botaoMultiplicacao = new javax.swing.JButton();
+        botaoDivisao = new javax.swing.JButton();
+        botaoPonto = new javax.swing.JButton();
+        botaoIgual = new javax.swing.JButton();
         botao2 = new javax.swing.JButton();
         botao7 = new javax.swing.JButton();
         botao3 = new javax.swing.JButton();
@@ -49,16 +49,16 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
         botao6.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
         botao6.setText("6");
 
-        adicao.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
-        adicao.setForeground(new java.awt.Color(255, 0, 0));
-        adicao.setText("+");
+        botaoAdicao.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
+        botaoAdicao.setForeground(new java.awt.Color(255, 0, 0));
+        botaoAdicao.setText("+");
 
         botao1.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
         botao1.setText("1");
 
-        subtracao.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
-        subtracao.setForeground(new java.awt.Color(255, 0, 0));
-        subtracao.setText("-");
+        botaoSubtracao.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
+        botaoSubtracao.setForeground(new java.awt.Color(255, 0, 0));
+        botaoSubtracao.setText("-");
 
         botao5.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
         botao5.setText("5");
@@ -69,19 +69,19 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
         botao0.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
         botao0.setText("0");
 
-        multiplicacao.setForeground(new java.awt.Color(255, 0, 0));
-        multiplicacao.setText("*");
+        botaoMultiplicacao.setForeground(new java.awt.Color(255, 0, 0));
+        botaoMultiplicacao.setText("*");
 
-        divisao.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
-        divisao.setForeground(new java.awt.Color(255, 0, 0));
-        divisao.setText("/");
+        botaoDivisao.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
+        botaoDivisao.setForeground(new java.awt.Color(255, 0, 0));
+        botaoDivisao.setText("/");
 
-        ponto.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
-        ponto.setText(".");
+        botaoPonto.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
+        botaoPonto.setText(".");
 
-        igual.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
-        igual.setForeground(new java.awt.Color(0, 153, 0));
-        igual.setText("=");
+        botaoIgual.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
+        botaoIgual.setForeground(new java.awt.Color(0, 153, 0));
+        botaoIgual.setText("=");
 
         botao2.setFont(new java.awt.Font("Calibri", 0, 11)); // NOI18N
         botao2.setText("2");
@@ -106,15 +106,15 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(botao9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(divisao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(botaoDivisao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(botao0, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ponto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(botaoPonto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(igual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(botaoIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(adicao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(botaoAdicao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -130,11 +130,11 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(subtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(botaoSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(multiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(botaoMultiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -145,25 +145,25 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
                     .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botao8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botao9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(divisao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botaoDivisao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(multiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botaoMultiplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(subtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botaoSubtracao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botao0, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ponto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(igual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(adicao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botaoPonto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botaoAdicao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -209,11 +209,11 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
         return botao.getText();
     }
     
-    public String getTexto(String txt){
+    public String getText(){
         return campoResultado.getText();
     }
     
-    public void setTexto(String txt){
+    public void setText(String txt){
         campoResultado.setText(txt);
     }
     
@@ -257,12 +257,28 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
         botao9.addActionListener(lis);
     }
     
-    public void addBotaoIgualButtonListener(ActionListener lis){
-        adicao.addActionListener(lis);
+    public void addBotaoAdicaoButtonListener(ActionListener lis){
+        botaoAdicao.addActionListener(lis);
     }
     
-    public void addBotaoAdicaoButtonListener(ActionListener lis){
-        adicao.addActionListener(lis);
+    public void addBotaoSubtracaoButtonListener(ActionListener lis){
+        botaoSubtracao.addActionListener(lis);
+    }
+    
+    public void addBotaoMultiplicacaoButtonListener(ActionListener lis){
+        botaoMultiplicacao.addActionListener(lis);
+    }
+    
+    public void addBotaoDivisaoButtonListener(ActionListener lis){
+        botaoDivisao.addActionListener(lis);
+    }
+    
+    public void addBotaoIgualButtonListener(ActionListener lis){
+        botaoIgual.addActionListener(lis);
+    }
+    
+    public void addBotaoPontoButtonListener(ActionListener lis){
+        botaoPonto.addActionListener(lis);
     }
     
     public void addBotaoPainelButtonListener(ActionListener lis){
@@ -270,7 +286,6 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton adicao;
     private javax.swing.JButton botao0;
     private javax.swing.JButton botao1;
     private javax.swing.JButton botao2;
@@ -281,13 +296,14 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
     private javax.swing.JButton botao7;
     private javax.swing.JButton botao8;
     private javax.swing.JButton botao9;
+    private javax.swing.JButton botaoAdicao;
+    private javax.swing.JButton botaoDivisao;
+    private javax.swing.JButton botaoIgual;
+    private javax.swing.JButton botaoMultiplicacao;
     private javax.swing.JButton botaoPainel;
+    private javax.swing.JButton botaoPonto;
+    private javax.swing.JButton botaoSubtracao;
     private javax.swing.JTextField campoResultado;
-    private javax.swing.JButton divisao;
-    private javax.swing.JButton igual;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton multiplicacao;
-    private javax.swing.JButton ponto;
-    private javax.swing.JButton subtracao;
     // End of variables declaration//GEN-END:variables
 }

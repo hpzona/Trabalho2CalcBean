@@ -1,9 +1,9 @@
 
 package modelo;
 
-public class Logica {
+public class Modelo {
     
-    public Logica(){
+    public Modelo(){
         
     }
 

@@ -61,16 +61,16 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="botao9" min="-2" pref="40" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="divisao" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="botaoDivisao" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="botao0" min="-2" pref="40" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="ponto" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="botaoPonto" min="-2" pref="40" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="igual" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="botaoIgual" min="-2" pref="40" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="adicao" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="botaoAdicao" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -90,12 +90,12 @@
                               <Group type="102" attributes="0">
                                   <Component id="botao3" min="-2" pref="40" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="subtracao" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Component id="botaoSubtracao" min="-2" pref="40" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="botao6" min="-2" pref="40" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="multiplicacao" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Component id="botaoMultiplicacao" min="-2" pref="40" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -112,28 +112,28 @@
                       <Component id="botao7" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="botao8" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="botao9" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="divisao" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="botaoDivisao" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="botao4" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="botao5" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="botao6" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="multiplicacao" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="botaoMultiplicacao" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="botao1" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="botao3" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="botao2" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="subtracao" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="botaoSubtracao" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="botao0" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="ponto" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="igual" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="adicao" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="botaoPonto" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="botaoIgual" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="botaoAdicao" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -165,7 +165,7 @@
             <Property name="text" type="java.lang.String" value="6"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="adicao">
+        <Component class="javax.swing.JButton" name="botaoAdicao">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="11" style="0"/>
@@ -184,7 +184,7 @@
             <Property name="text" type="java.lang.String" value="1"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="subtracao">
+        <Component class="javax.swing.JButton" name="botaoSubtracao">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="11" style="0"/>
@@ -219,7 +219,7 @@
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="multiplicacao">
+        <Component class="javax.swing.JButton" name="botaoMultiplicacao">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="ff" type="rgb"/>
@@ -227,7 +227,7 @@
             <Property name="text" type="java.lang.String" value="*"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="divisao">
+        <Component class="javax.swing.JButton" name="botaoDivisao">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="11" style="0"/>
@@ -238,7 +238,7 @@
             <Property name="text" type="java.lang.String" value="/"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="ponto">
+        <Component class="javax.swing.JButton" name="botaoPonto">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="11" style="0"/>
@@ -246,7 +246,7 @@
             <Property name="text" type="java.lang.String" value="."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="igual">
+        <Component class="javax.swing.JButton" name="botaoIgual">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="11" style="0"/>

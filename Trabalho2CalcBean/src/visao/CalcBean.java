@@ -1,7 +1,7 @@
 package visao;
 
-import java.awt.Dimension;
 import java.awt.event.ActionListener;
+import javax.swing.JButton;
 
 public class CalcBean extends javax.swing.JPanel implements java.beans.Customizer {
     
@@ -205,8 +205,12 @@ public class CalcBean extends javax.swing.JPanel implements java.beans.Customize
     }
     
     public String getValor(Object b){
-        javax.swing.JButton botao = (javax.swing.JButton) b; 
+        JButton botao = (JButton) b; 
         return botao.getText();
+    }
+    
+    public String getTexto(String txt){
+        return campoResultado.getText();
     }
     
     public void setTexto(String txt){

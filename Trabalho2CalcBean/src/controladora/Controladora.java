@@ -40,19 +40,12 @@ public class Controladora {
     }
 
 //////////////////////////// Aqui encontra-se todas as InnerClass com os ActionListener da classe CalcBean
-    private class BotaoNumerosButtonListener implements ActionListener {
+private class BotaoNumerosButtonListener implements ActionListener {
       @Override
       public void actionPerformed(ActionEvent e) {
+          String valor_atual = visor.getText(); // pega o texto atual do visor 
           String num = calculadora.getValor(e.getSource());
-          if(!operacao)
-              {
-               primeirovalor += num;
-               calculadora.setTexto(primeirovalor);
-              }
-          else{
-              segundovalor += num;
-              calculadora.setTexto(primeirovalor + segundovalor);
-          }
+          calculadora.setTexto(primeirovalor);
       }   
     }
     

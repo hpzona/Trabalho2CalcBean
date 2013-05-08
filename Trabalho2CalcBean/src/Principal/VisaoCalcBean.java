@@ -7,7 +7,8 @@ import javax.swing.JOptionPane;
 public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Customizer {
 
     private Object bean;
-    boolean calcPanelVisible;
+    boolean calcPanelVisible2;
+    private boolean calcPanelVisible = false;
     char operador;
     String valor1;
     String resultado;
@@ -18,7 +19,7 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
         initComponents();
         this.pontoInserido = false;
         this.jaCalculou = false;
-        setVisibilidadePainel(false);
+        setCalcPanelVisible(false);
     }
 
     @Override
@@ -454,10 +455,10 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
 
    private void botaoPainelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoPainelActionPerformed
        if (isCalcPanelVisible()) {
-           setVisibilidadePainel(false);
+           setCalcPanelVisible(false);
            setPreferredSize(new Dimension(205, 48));
        } else {
-           setVisibilidadePainel(true);
+           setCalcPanelVisible(true);
        }
    }//GEN-LAST:event_botaoPainelActionPerformed
 
@@ -506,18 +507,6 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
         this.pontoInserido = pontoInserido;
     }
 
-    private void setVisibilidadePainel(boolean status) {
-        this.jPanel1.setVisible(status);
-        setCalcPanelVisible(status);
-    }
-
-    private boolean isCalcPanelVisible() {
-        return this.calcPanelVisible;
-    }
-
-    private void setCalcPanelVisible(boolean calcPanelVisible) {
-        this.calcPanelVisible = calcPanelVisible;
-    }
 
     private String getText() {
         return this.campoResultado.getText();
@@ -546,8 +535,18 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
     private void SemValorPraCalcular() {
         JOptionPane.showMessageDialog(null, "Sem valor pra calcular", "SEM VALOR", WIDTH);
     }
+    
 
-    public static void main(String[] args) {
+    public boolean isCalcPanelVisible() {
+        return calcPanelVisible;
+    }
+
+    public void setCalcPanelVisible(boolean calcPanelVisible) {
+        this.calcPanelVisible = calcPanelVisible;
+        this.jPanel1.setVisible(calcPanelVisible);
+    }
+
+ /*   public static void main(String[] args) {
         javax.swing.JFrame frame = new javax.swing.JFrame();  // Cria frame
         VisaoCalcBean bean = new VisaoCalcBean(); // Instancia o bean
         frame.add(bean);  // Adiciona bean ao frame
@@ -557,7 +556,7 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);  // Exibe o frame
 
-    }
+    }*/
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botao0;
     private javax.swing.JButton botao1;

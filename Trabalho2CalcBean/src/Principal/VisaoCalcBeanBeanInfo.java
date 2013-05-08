@@ -6,13 +6,9 @@ package Principal;
 
 import java.beans.*;
 
-/**
- *
- * @author Willian
- */
 public class VisaoCalcBeanBeanInfo extends SimpleBeanInfo {
-   
-    public VisaoCalcBeanBeanInfo() {
+    
+   public VisaoCalcBeanBeanInfo() {
       super();
       iconNameC16 = "/icones/calcC16.png";
       iconNameC32 = "/icones/calcC32.png";
@@ -41,103 +37,104 @@ public class VisaoCalcBeanBeanInfo extends SimpleBeanInfo {
     private static final int PROPERTY_baselineResizeBehavior = 8;
     private static final int PROPERTY_border = 9;
     private static final int PROPERTY_bounds = 10;
-    private static final int PROPERTY_colorModel = 11;
-    private static final int PROPERTY_component = 12;
-    private static final int PROPERTY_componentCount = 13;
-    private static final int PROPERTY_componentListeners = 14;
-    private static final int PROPERTY_componentOrientation = 15;
-    private static final int PROPERTY_componentPopupMenu = 16;
-    private static final int PROPERTY_components = 17;
-    private static final int PROPERTY_containerListeners = 18;
-    private static final int PROPERTY_cursor = 19;
-    private static final int PROPERTY_cursorSet = 20;
-    private static final int PROPERTY_debugGraphicsOptions = 21;
-    private static final int PROPERTY_displayable = 22;
-    private static final int PROPERTY_doubleBuffered = 23;
-    private static final int PROPERTY_dropTarget = 24;
-    private static final int PROPERTY_enabled = 25;
-    private static final int PROPERTY_focusable = 26;
-    private static final int PROPERTY_focusCycleRoot = 27;
-    private static final int PROPERTY_focusCycleRootAncestor = 28;
-    private static final int PROPERTY_focusListeners = 29;
-    private static final int PROPERTY_focusOwner = 30;
-    private static final int PROPERTY_focusTraversable = 31;
-    private static final int PROPERTY_focusTraversalKeys = 32;
-    private static final int PROPERTY_focusTraversalKeysEnabled = 33;
-    private static final int PROPERTY_focusTraversalPolicy = 34;
-    private static final int PROPERTY_focusTraversalPolicyProvider = 35;
-    private static final int PROPERTY_focusTraversalPolicySet = 36;
-    private static final int PROPERTY_font = 37;
-    private static final int PROPERTY_fontSet = 38;
-    private static final int PROPERTY_foreground = 39;
-    private static final int PROPERTY_foregroundSet = 40;
-    private static final int PROPERTY_graphics = 41;
-    private static final int PROPERTY_graphicsConfiguration = 42;
-    private static final int PROPERTY_height = 43;
-    private static final int PROPERTY_hierarchyBoundsListeners = 44;
-    private static final int PROPERTY_hierarchyListeners = 45;
-    private static final int PROPERTY_ignoreRepaint = 46;
-    private static final int PROPERTY_inheritsPopupMenu = 47;
-    private static final int PROPERTY_inputContext = 48;
-    private static final int PROPERTY_inputMap = 49;
-    private static final int PROPERTY_inputMethodListeners = 50;
-    private static final int PROPERTY_inputMethodRequests = 51;
-    private static final int PROPERTY_inputVerifier = 52;
-    private static final int PROPERTY_insets = 53;
-    private static final int PROPERTY_jaCalculou = 54;
-    private static final int PROPERTY_keyListeners = 55;
-    private static final int PROPERTY_layout = 56;
-    private static final int PROPERTY_lightweight = 57;
-    private static final int PROPERTY_locale = 58;
-    private static final int PROPERTY_location = 59;
-    private static final int PROPERTY_locationOnScreen = 60;
-    private static final int PROPERTY_managingFocus = 61;
-    private static final int PROPERTY_maximumSize = 62;
-    private static final int PROPERTY_maximumSizeSet = 63;
-    private static final int PROPERTY_minimumSize = 64;
-    private static final int PROPERTY_minimumSizeSet = 65;
-    private static final int PROPERTY_mouseListeners = 66;
-    private static final int PROPERTY_mouseMotionListeners = 67;
-    private static final int PROPERTY_mousePosition = 68;
-    private static final int PROPERTY_mouseWheelListeners = 69;
-    private static final int PROPERTY_name = 70;
-    private static final int PROPERTY_nextFocusableComponent = 71;
-    private static final int PROPERTY_object = 72;
-    private static final int PROPERTY_opaque = 73;
-    private static final int PROPERTY_optimizedDrawingEnabled = 74;
-    private static final int PROPERTY_paintingForPrint = 75;
-    private static final int PROPERTY_paintingTile = 76;
-    private static final int PROPERTY_parent = 77;
-    private static final int PROPERTY_peer = 78;
-    private static final int PROPERTY_preferredSize = 79;
-    private static final int PROPERTY_preferredSizeSet = 80;
-    private static final int PROPERTY_propertyChangeListeners = 81;
-    private static final int PROPERTY_registeredKeyStrokes = 82;
-    private static final int PROPERTY_requestFocusEnabled = 83;
-    private static final int PROPERTY_rootPane = 84;
-    private static final int PROPERTY_showing = 85;
-    private static final int PROPERTY_size = 86;
-    private static final int PROPERTY_toolkit = 87;
-    private static final int PROPERTY_toolTipText = 88;
-    private static final int PROPERTY_topLevelAncestor = 89;
-    private static final int PROPERTY_transferHandler = 90;
-    private static final int PROPERTY_treeLock = 91;
-    private static final int PROPERTY_UI = 92;
-    private static final int PROPERTY_UIClassID = 93;
-    private static final int PROPERTY_valid = 94;
-    private static final int PROPERTY_validateRoot = 95;
-    private static final int PROPERTY_verifyInputWhenFocusTarget = 96;
-    private static final int PROPERTY_vetoableChangeListeners = 97;
-    private static final int PROPERTY_visible = 98;
-    private static final int PROPERTY_visibleRect = 99;
-    private static final int PROPERTY_width = 100;
-    private static final int PROPERTY_x = 101;
-    private static final int PROPERTY_y = 102;
+    private static final int PROPERTY_calcPanelVisible = 11;
+    private static final int PROPERTY_colorModel = 12;
+    private static final int PROPERTY_component = 13;
+    private static final int PROPERTY_componentCount = 14;
+    private static final int PROPERTY_componentListeners = 15;
+    private static final int PROPERTY_componentOrientation = 16;
+    private static final int PROPERTY_componentPopupMenu = 17;
+    private static final int PROPERTY_components = 18;
+    private static final int PROPERTY_containerListeners = 19;
+    private static final int PROPERTY_cursor = 20;
+    private static final int PROPERTY_cursorSet = 21;
+    private static final int PROPERTY_debugGraphicsOptions = 22;
+    private static final int PROPERTY_displayable = 23;
+    private static final int PROPERTY_doubleBuffered = 24;
+    private static final int PROPERTY_dropTarget = 25;
+    private static final int PROPERTY_enabled = 26;
+    private static final int PROPERTY_focusable = 27;
+    private static final int PROPERTY_focusCycleRoot = 28;
+    private static final int PROPERTY_focusCycleRootAncestor = 29;
+    private static final int PROPERTY_focusListeners = 30;
+    private static final int PROPERTY_focusOwner = 31;
+    private static final int PROPERTY_focusTraversable = 32;
+    private static final int PROPERTY_focusTraversalKeys = 33;
+    private static final int PROPERTY_focusTraversalKeysEnabled = 34;
+    private static final int PROPERTY_focusTraversalPolicy = 35;
+    private static final int PROPERTY_focusTraversalPolicyProvider = 36;
+    private static final int PROPERTY_focusTraversalPolicySet = 37;
+    private static final int PROPERTY_font = 38;
+    private static final int PROPERTY_fontSet = 39;
+    private static final int PROPERTY_foreground = 40;
+    private static final int PROPERTY_foregroundSet = 41;
+    private static final int PROPERTY_graphics = 42;
+    private static final int PROPERTY_graphicsConfiguration = 43;
+    private static final int PROPERTY_height = 44;
+    private static final int PROPERTY_hierarchyBoundsListeners = 45;
+    private static final int PROPERTY_hierarchyListeners = 46;
+    private static final int PROPERTY_ignoreRepaint = 47;
+    private static final int PROPERTY_inheritsPopupMenu = 48;
+    private static final int PROPERTY_inputContext = 49;
+    private static final int PROPERTY_inputMap = 50;
+    private static final int PROPERTY_inputMethodListeners = 51;
+    private static final int PROPERTY_inputMethodRequests = 52;
+    private static final int PROPERTY_inputVerifier = 53;
+    private static final int PROPERTY_insets = 54;
+    private static final int PROPERTY_jaCalculou = 55;
+    private static final int PROPERTY_keyListeners = 56;
+    private static final int PROPERTY_layout = 57;
+    private static final int PROPERTY_lightweight = 58;
+    private static final int PROPERTY_locale = 59;
+    private static final int PROPERTY_location = 60;
+    private static final int PROPERTY_locationOnScreen = 61;
+    private static final int PROPERTY_managingFocus = 62;
+    private static final int PROPERTY_maximumSize = 63;
+    private static final int PROPERTY_maximumSizeSet = 64;
+    private static final int PROPERTY_minimumSize = 65;
+    private static final int PROPERTY_minimumSizeSet = 66;
+    private static final int PROPERTY_mouseListeners = 67;
+    private static final int PROPERTY_mouseMotionListeners = 68;
+    private static final int PROPERTY_mousePosition = 69;
+    private static final int PROPERTY_mouseWheelListeners = 70;
+    private static final int PROPERTY_name = 71;
+    private static final int PROPERTY_nextFocusableComponent = 72;
+    private static final int PROPERTY_object = 73;
+    private static final int PROPERTY_opaque = 74;
+    private static final int PROPERTY_optimizedDrawingEnabled = 75;
+    private static final int PROPERTY_paintingForPrint = 76;
+    private static final int PROPERTY_paintingTile = 77;
+    private static final int PROPERTY_parent = 78;
+    private static final int PROPERTY_peer = 79;
+    private static final int PROPERTY_preferredSize = 80;
+    private static final int PROPERTY_preferredSizeSet = 81;
+    private static final int PROPERTY_propertyChangeListeners = 82;
+    private static final int PROPERTY_registeredKeyStrokes = 83;
+    private static final int PROPERTY_requestFocusEnabled = 84;
+    private static final int PROPERTY_rootPane = 85;
+    private static final int PROPERTY_showing = 86;
+    private static final int PROPERTY_size = 87;
+    private static final int PROPERTY_toolkit = 88;
+    private static final int PROPERTY_toolTipText = 89;
+    private static final int PROPERTY_topLevelAncestor = 90;
+    private static final int PROPERTY_transferHandler = 91;
+    private static final int PROPERTY_treeLock = 92;
+    private static final int PROPERTY_UI = 93;
+    private static final int PROPERTY_UIClassID = 94;
+    private static final int PROPERTY_valid = 95;
+    private static final int PROPERTY_validateRoot = 96;
+    private static final int PROPERTY_verifyInputWhenFocusTarget = 97;
+    private static final int PROPERTY_vetoableChangeListeners = 98;
+    private static final int PROPERTY_visible = 99;
+    private static final int PROPERTY_visibleRect = 100;
+    private static final int PROPERTY_width = 101;
+    private static final int PROPERTY_x = 102;
+    private static final int PROPERTY_y = 103;
 
     // Property array 
     /*lazy PropertyDescriptor*/
     private static PropertyDescriptor[] getPdescriptor(){
-        PropertyDescriptor[] properties = new PropertyDescriptor[103];
+        PropertyDescriptor[] properties = new PropertyDescriptor[104];
     
         try {
             properties[PROPERTY_accessibleContext] = new PropertyDescriptor ( "accessibleContext", Principal.VisaoCalcBean.class, "getAccessibleContext", null ); // NOI18N
@@ -151,6 +148,7 @@ public class VisaoCalcBeanBeanInfo extends SimpleBeanInfo {
             properties[PROPERTY_baselineResizeBehavior] = new PropertyDescriptor ( "baselineResizeBehavior", Principal.VisaoCalcBean.class, "getBaselineResizeBehavior", null ); // NOI18N
             properties[PROPERTY_border] = new PropertyDescriptor ( "border", Principal.VisaoCalcBean.class, "getBorder", "setBorder" ); // NOI18N
             properties[PROPERTY_bounds] = new PropertyDescriptor ( "bounds", Principal.VisaoCalcBean.class, "getBounds", "setBounds" ); // NOI18N
+            properties[PROPERTY_calcPanelVisible] = new PropertyDescriptor ( "calcPanelVisible", Principal.VisaoCalcBean.class, "isCalcPanelVisible", "setCalcPanelVisible" ); // NOI18N
             properties[PROPERTY_colorModel] = new PropertyDescriptor ( "colorModel", Principal.VisaoCalcBean.class, "getColorModel", null ); // NOI18N
             properties[PROPERTY_component] = new IndexedPropertyDescriptor ( "component", Principal.VisaoCalcBean.class, null, null, "getComponent", null ); // NOI18N
             properties[PROPERTY_componentCount] = new PropertyDescriptor ( "componentCount", Principal.VisaoCalcBean.class, "getComponentCount", null ); // NOI18N

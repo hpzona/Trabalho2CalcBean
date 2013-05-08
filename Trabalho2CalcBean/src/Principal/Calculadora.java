@@ -1,25 +1,27 @@
 package Principal;
 
 import java.awt.Dimension;
+import java.awt.Font;
 import java.io.Serializable;
 import javax.swing.JOptionPane;
 
-public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Customizer {
+public class Calculadora extends javax.swing.JPanel implements java.beans.Customizer {
 
     private Object bean;
-    boolean calcPanelVisible2;
-    private boolean calcPanelVisible = false;
+    private boolean calcPanelVisible;
+    private double value;
+    private Font font;
     char operador;
     String valor1;
-    String resultado;
     boolean pontoInserido;
     boolean jaCalculou;
 
-    public VisaoCalcBean() {
+    public Calculadora() {
         initComponents();
         this.pontoInserido = false;
         this.jaCalculou = false;
-        setCalcPanelVisible(false);
+        this.calcPanelVisible = true;
+        this.font = new java.awt.Font("Calibri", 0, 11);
     }
 
     @Override
@@ -201,7 +203,7 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
         });
         jPanel1.add(botaoAdicao);
 
-        botaoPainel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/calcM32.png"))); // NOI18N
+        botaoPainel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icones/calcC32.png"))); // NOI18N
         botaoPainel.setBorderPainted(false);
         botaoPainel.setContentAreaFilled(false);
         botaoPainel.setFocusable(false);
@@ -430,12 +432,12 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
                String valor2 = this.campoResultado.getText(); // valor2 recebe o valor atual
                float v = Float.parseFloat(valor1); // converte o valor1 em float
                float v2 = Float.parseFloat(valor2); // converte valor2 em float
-               resultado = "" + calcular(v, operador, v2);
-               this.campoResultado.setText(resultado);
+               value = calcular(v, operador, v2);
+               this.campoResultado.setText("" + value);
                setPontoInserido(false);
                setJaCalculou(true);
                atualizarBotoes();
-               setValor1(resultado);
+               setValor1("" + value);
            }
        } catch (NumberFormatException nfe) {
            ValorInvalido();
@@ -542,13 +544,26 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
     }
 
     public void setCalcPanelVisible(boolean calcPanelVisible) {
-        this.calcPanelVisible = calcPanelVisible;
         this.jPanel1.setVisible(calcPanelVisible);
+        this.calcPanelVisible = calcPanelVisible;
+    }
+    
+    public double getValue() { //get valor na tela de resultado
+        return value;
     }
 
- /*   public static void main(String[] args) {
+    public void setValue(double value) { //set valor na tela de resultado
+        this.value = value;
+        campoResultado.setText("" + value);
+    }
+
+    public Font getFont() { //retorna valor da fonte
+        return font;
+    }
+
+   public static void main(String[] args) {
         javax.swing.JFrame frame = new javax.swing.JFrame();  // Cria frame
-        VisaoCalcBean bean = new VisaoCalcBean(); // Instancia o bean
+        Calculadora bean = new Calculadora(); // Instancia o bean
         frame.add(bean);  // Adiciona bean ao frame
         frame.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
         frame.setSize(202, 294);
@@ -556,7 +571,7 @@ public class VisaoCalcBean extends javax.swing.JPanel implements java.beans.Cust
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);  // Exibe o frame
 
-    }*/
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botao0;
     private javax.swing.JButton botao1;

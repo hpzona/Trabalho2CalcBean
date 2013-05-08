@@ -7,7 +7,7 @@ package Principal;
 import java.beans.*;
 
 public class CalculadoraBeanInfo extends SimpleBeanInfo {
-    
+
    public CalculadoraBeanInfo() {
       super();
       iconNameC16 = "/icones/calcC16.png";
@@ -16,7 +16,6 @@ public class CalculadoraBeanInfo extends SimpleBeanInfo {
       iconNameM32 = "/icones/calcM32.png";
       // defaultPropertyIndex = 1;
    }
-
     // Bean descriptor//GEN-FIRST:BeanDescriptor
     /*lazy BeanDescriptor*/
     private static BeanDescriptor getBdescriptor(){

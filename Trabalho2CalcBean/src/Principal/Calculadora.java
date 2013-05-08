@@ -20,7 +20,7 @@ public class Calculadora extends javax.swing.JPanel implements java.beans.Custom
         initComponents();
         this.pontoInserido = false;
         this.jaCalculou = false;
-        this.calcPanelVisible = true;
+        setCalcPanelVisible(false);
         this.font = new java.awt.Font("Calibri", 0, 11);
     }
 
@@ -572,6 +572,7 @@ public class Calculadora extends javax.swing.JPanel implements java.beans.Custom
         frame.setVisible(true);  // Exibe o frame
 
     }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botao0;
     private javax.swing.JButton botao1;

@@ -18,6 +18,7 @@ public class Principal {
         
         frame.add(bean);  // Adiciona bean ao frame
         frame.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+        frame.setSize(200, 300);
         frame.setVisible(true);  // Exibe o frame
         frame.setLocationRelativeTo(null);
     }
